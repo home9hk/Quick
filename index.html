@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>速成輸入法 Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="badge">速成輸入法</p>
+        <h1>速成輸入法速成 Demo</h1>
+        <p class="subtitle">輸入速成碼，點選候選字，就能快速組字。</p>
+      </header>
+
+      <section class="panel">
+        <label class="field">
+          <span>速成碼輸入</span>
+          <input id="codeInput" type="text" placeholder="例如：AB、AA、KM" />
+        </label>
+        <div class="panel-actions">
+          <div class="hint" id="matchHint">請輸入 1～4 碼查詢。</div>
+          <button id="toggleSize" class="toggle" type="button">放大選字表</button>
+        </div>
+        <div class="candidates" id="candidateList"></div>
+      </section>
+
+      <section class="panel">
+        <label class="field">
+          <span>輸出區</span>
+          <textarea id="output" rows="4" placeholder="點選候選字會加入這裡"></textarea>
+        </label>
+        <div class="actions">
+          <button id="clearOutput" type="button">清除輸出</button>
+        </div>
+      </section>
+
+      <section class="panel reference">
+        <h2>常見速成碼參考</h2>
+        <ul id="referenceList"></ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
