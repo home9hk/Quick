@@ -1,0 +1,8 @@
+# 速成輸入法 Quick Input Method
+# 核心依賴（均為 Python 標準庫，無需額外安裝）
+# - tkinter (GUI)
+# - ctypes (Windows API)
+# - threading, queue (多執行緒)
+
+# 可選：打包為 .exe 執行檔
+pyinstaller>=6.0; sys_platform == "win32"
